@@ -1,4 +1,4 @@
-﻿
+
 
 
 public class Lista <T extends Compara> {

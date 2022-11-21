@@ -1,4 +1,4 @@
-﻿
+
 public class StringCompara implements Compara<StringCompara> {
 	public String dato;
 	public StringCompara (String i){

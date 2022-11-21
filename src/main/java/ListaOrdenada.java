@@ -1,4 +1,4 @@
-﻿
+
 public class ListaOrdenada<T extends Compara> extends Lista<T>{
 
 	public ListaOrdenada (){

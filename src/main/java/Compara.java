@@ -1,4 +1,4 @@
-﻿
+
 import java.time.LocalDate;
 
 interface Compara <T> {
