@@ -1,4 +1,4 @@
-
+﻿
 
 
 public class Lista <T extends Compara> {
@@ -30,7 +30,7 @@ public class Lista <T extends Compara> {
 		for (i = 0; i < this.lon && !aux; i++){
 			aux = this.v [i].igualQue (c);
 		}
-		// Uso el valor de i al salir, muevo todos los elementos uno para atr�s
+		// Uso el valor de i al salir, muevo todos los elementos uno para atrás
 		for (int j = i; j < this.lon; j++){
 			this.v [j-1] = this.v [j];
 		}

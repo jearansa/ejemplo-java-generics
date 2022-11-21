@@ -1,4 +1,4 @@
-
+ï»¿
 import java.time.LocalDate;
 
 interface Compara <T> {
@@ -16,7 +16,7 @@ class Articulo implements Compara<Articulo>{
 		this.titulo = t;
 	}
 
-	// La ordenación implementada será por el atributo "id";
+	// La ordenaciÃ³n implementada serÃ¡ por el atributo "id";
 	public boolean mayorQue (Articulo a){
 		return (this.id > a.id);
 	}
@@ -27,7 +27,7 @@ class Articulo implements Compara<Articulo>{
 		return (this.id == a.id);
 	}
 	public String toString (){
-		return ("El id del artículo es " + this.id + "\n El título del mismo es " + this.titulo);
+		return ("El id del artÃ­culo es " + this.id + "\n El tÃ­tulo del mismo es " + this.titulo);
 	}
 }
 
@@ -40,7 +40,7 @@ class Usuario implements Compara<Usuario>{
 		this.apellido = a;
 	}
 
-	// La ordenación implementada será por orden lexicográfico primero en el atributo "apellido"
+	// La ordenaciÃ³n implementada serÃ¡ por orden lexicogrÃ¡fico primero en el atributo "apellido"
 	// y luego (si el apellido coincide) en el atributo "nombre";
 	public boolean mayorQue (Usuario u){
 		return ((this.apellido.compareTo (u.apellido) > 0)
@@ -62,7 +62,7 @@ class Usuario implements Compara<Usuario>{
 class Prestamo implements Compara<Prestamo>{
 	private Articulo ar;
 	private Usuario us;
-	private LocalDate fp; // atributo representando la fecha de préstamo
+	private LocalDate fp; // atributo representando la fecha de prÃ©stamo
 
 	public Prestamo (Articulo a, Usuario u, LocalDate f){
 		this.ar = a;
@@ -70,8 +70,8 @@ class Prestamo implements Compara<Prestamo>{
 		this.fp = f;
 	}
 
-	// La ordenación implementada será por la ordenación del atributo fecha de préstamo, "fp";
-	// Haremos uso de los métodos que ofrece la clase "java.util.Date" para comparar fechas
+	// La ordenaciÃ³n implementada serÃ¡ por la ordenaciÃ³n del atributo fecha de prÃ©stamo, "fp";
+	// Haremos uso de los mÃ©todos que ofrece la clase "java.util.Date" para comparar fechas
 	public boolean mayorQue (Prestamo p){
 		return (this.fp.compareTo (p.fp) > 0);
 	}
@@ -82,9 +82,9 @@ class Prestamo implements Compara<Prestamo>{
 		return (this.fp.compareTo (p.fp) == 0);
 	}
 	public String toString (){
-		return ("La fecha del préstamo es " + this.fp.toString()
+		return ("La fecha del prÃ©stamo es " + this.fp.toString()
 				+ "\n El usuario es " + this.us.toString()
-					+ "\n El artículo es " + this.ar.toString());
+					+ "\n El artÃ­culo es " + this.ar.toString());
 	}
 }
 

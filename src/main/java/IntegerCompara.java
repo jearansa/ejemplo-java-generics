@@ -1,4 +1,4 @@
-
+﻿
 public class IntegerCompara implements Compara<IntegerCompara>{
 	public Integer dato;
 	public IntegerCompara (int i){

@@ -1,4 +1,4 @@
-
+﻿
 public class DoubleCompara implements Compara<DoubleCompara> {
 
 	public Double dato;
