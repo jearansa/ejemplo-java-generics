@@ -13,7 +13,7 @@ import java.util.TreeSet;
 // dependiendo de qué clase usemos:
 
 
-enum Ojos {red, blue, green}
+enum Ojos {black, brown, green, blue}
 
 class Persona {
 	protected String nombre;
